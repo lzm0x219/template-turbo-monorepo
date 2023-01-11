@@ -1,0 +1,40 @@
+{
+  "name": "template",
+  "private": true,
+  "description": "template monorepo",
+  "author": {
+    "name": "0x219",
+    "email": "lzm0x219@gmail.com"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "is-ci || husky install"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,cjs}": [
+      "rome format --write",
+      "rome check"
+    ],
+    "*.{md,html,css,json,yml}": "prettier --write",
+    "!(*pnpm-lock).yaml": "prettier --write",
+    "package.json": "pnpm sort-package-json"
+  },
+  "devDependencies": {
+    "husky": "8.0.2",
+    "is-ci": "3.0.1",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.1",
+    "prettier-plugin-packagejson": "2.3.0",
+    "prettier-plugin-tailwindcss": "0.2.1",
+    "rome": "11.0.0",
+    "sort-package-json": "2.1.0",
+    "turbo": "1.6.3",
+    "typescript": "4.9.4"
+  }
+}
