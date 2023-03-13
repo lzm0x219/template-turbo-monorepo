@@ -9,7 +9,7 @@ importers:
       lint-staged: 13.1.1
       prettier: 2.8.4
       prettier-plugin-packagejson: 2.4.2
-      prettier-plugin-tailwindcss: 0.2.2
+      prettier-plugin-tailwindcss: 0.2.4
       rome: 11.0.0
       sort-package-json: 2.4.1
       turbo: 1.8.3
@@ -20,7 +20,7 @@ importers:
       lint-staged: 13.1.1
       prettier: 2.8.4
       prettier-plugin-packagejson: 2.4.2_prettier@2.8.4
-      prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.4
+      prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.4
       rome: 11.0.0
       sort-package-json: 2.4.1
       turbo: 1.8.3
@@ -599,10 +599,11 @@ packages:
       synckit: 0.8.5
     dev: true
 
-  /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.4:
-    resolution: {integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==}
+  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.4:
+    resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
       '@prettier/plugin-php': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
@@ -619,6 +620,8 @@ packages:
       prettier-plugin-svelte: '*'
       prettier-plugin-twig-melody: '*'
     peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
       '@prettier/plugin-php':
         optional: true
       '@prettier/plugin-pug':
