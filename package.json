@@ -30,7 +30,7 @@
     "is-ci": "3.0.1",
     "lint-staged": "13.2.0",
     "prettier": "2.8.4",
-    "prettier-plugin-packagejson": "2.4.2",
+    "prettier-plugin-packagejson": "2.4.3",
     "prettier-plugin-tailwindcss": "0.2.4",
     "rome": "11.0.0",
     "sort-package-json": "2.4.1",
